@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Nunito', sans-serif;
+    color: #1E1E1E;
+}
+
+.header {
+    background-color: #80A529;
+    color: #fff;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 38px;
+}
+
+.logo-link {
+    display: inline-block;
+    font-size: 0;
+    padding-top: 3px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.logo-text {
+    width: 221px;
+    height: 48px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 58px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.navigation-link:last-child {
+    margin-right: 0;
+}
+
+.phone {
+    width: 293px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.phone-number {
+    position: relative;
+    margin-left: 23px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.phone-number::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -23px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/phone.svg);
+    background-size: 18px 18px;
+}
+
+.button {
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reservation {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background-color: #FB8E30;
+    border: 1px solid #FB8E30;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.reservation:hover {
+    transition: 0.3s;
+    color: #FB8E30;
+    background-color: #fff;
+}
+
+.back-call {
+    padding-top: 70px;
+    padding-bottom: 170px;
+    background-repeat: no-repeat;
+    background-size: 760px 700px;
+    background-image: url(../images/background.jpg);
+    background-position: top right;
+    font-family: 'Nunito', sans-serif;
+}
+
+.back-call-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.back-call-description {
+    width: 447px;
+    margin-right: 213px;
+}
+
+.sauna-name {
+    margin-top: 47px;
+    margin-bottom: 61px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 600;
+}
+
+.address {
+    position: relative;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.address::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -40px;
+    background-image: url(../images/location.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 24px;
+    width: 30px;
+    height: 30px;
+}
+
+.work-time {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.price {
+    margin-top: 0;
+    margin-bottom: 45px;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.back-call-button {
+    display: inline-block;
+    padding: 18px 31px;
+    background-color: #80A529;
+    border: 1px solid #80A529;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.back-call-button:hover {
+    transition: 0.3s;
+    color: #80A529;
+    background-color: #fff;
+}
+
+.sauna-img {
+    width: 440px;
+    height: 560px;
+    background-color:sandybrown
+}
+
+.social {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    height: 152px;
+}
+
+.social::before,
+.social::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(30, 30, 30, 1), rgba(30, 30, 30, 0));
+}
+
+.social::before {
+    top: -90px;
+    transform: translateX(50%) rotate(-90deg) translateY(0);
+}
+
+.social-img  {
+    display: inline-block;
+}
+
+.insta {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.vk {
+    display: inline-block;
+    width: 24px;
+    height: 14px;
+}
+
+.fb {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+
+.social::after {
+    bottom: -90px;
+    transform: translateX(50%) rotate(90deg) translateY(0);
+}
+
+.if-available {
+    padding-top: 25px;
+    padding-bottom: 19px;
+    color: #fff;
+    background-color: #80A529;
+} 
+
+.if-available-heading {
+    font-family: 'Comfortaa', cursive;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+    
+.if-available-form {
+    position: relative;
+    font-size: 0;
+    width: 100%;
+}
+
+.if-available-inputs {
+    width: 840px;
+}
+
+.input {
+    font-size: 16px;
+    line-height: 22px;
+    width: 400px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 40px;
+    
+}
+.input:nth-child(2) {
+    margin-right: 0;
+}
+
+input::placeholder {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 22px;    
+    letter-spacing: 0.02em;
+    color: rgba(30, 30, 30, 0.5)
+}
+
+.check-button {
+    width: 400px;
+    padding: 11.5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #80A529;
+    background-color: #fff;
+    border: 1px solid #80A529;
+    border-radius: 5px;
+}
+
+.check-button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #80A529;
+    border: 1px solid #fff;
+}
+
+.user-agreement {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.agree-checkbox {
+    margin-right: 10px;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+.user-agreement-link {
+    text-decoration: underline;
+}
+
+.bucketAndBroom-img {
+    position: absolute;
+    bottom: 0;
+    right: 27px;
+}
